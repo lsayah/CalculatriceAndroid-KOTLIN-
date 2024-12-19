@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E3E3E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="492dp"
+        android:text="Ma Calculatrice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ValeurA"
+        android:layout_width="288dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Valeur A"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ValeurB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/ValeurB"
+        android:layout_width="290dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Valeur B"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Calculer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValeurA" />
+
+    <Button
+        android:id="@+id/Calculer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="67dp"
+        android:text="Calculer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValeurB" />
+
+    <EditText
+        android:id="@+id/Résultats"
+        android:layout_width="292dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Résultats"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Calculer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValeurB" />
+</androidx.constraintlayout.widget.ConstraintLayout>
