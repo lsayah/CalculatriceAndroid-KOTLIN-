@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
            this.ValeurA=findViewById(R.id.ValeurA)
             this.ValeurB=findViewById(R.id.ValeurB)
             this.Calculer=findViewById(R.id.Calculer)
+        this.Résultats=findViewById(R.id.Résultats)
 
 
             Calculer.setOnClickListener {
